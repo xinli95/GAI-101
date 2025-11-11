@@ -54,9 +54,10 @@ Here, the model’s generation process acts like an agent taking actions (tokens
 ## 5. PPO Objective for LLMs
 
 PPO optimizes:
-\[
+
+$$
 \mathbb{E}_{x,y \sim \pi_\theta}[r(x,y) - \beta \, KL(\pi_\theta(y|x) || \pi_{ref}(y|x))]
-\]
+$$
 
 - **r(x, y)** – reward model or verifier score.
 - **KL term** – penalizes divergence from the reference model.
