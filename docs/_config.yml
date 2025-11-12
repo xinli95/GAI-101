@@ -1,0 +1,43 @@
+# Jekyll configuration for GitHub Pages
+# https://docs.github.com/pages
+
+# Site metadata
+name: GAI-101 Notes
+title: GAI-101
+description: "Reinforcement Learning from Human Feedback (RLHF) and PPO notes"
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  hard_wrap: false
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+    span:
+      line_numbers: false
+
+# Enable sass if needed later
+sass:
+  style: compressed
+
+# Custom flags
+mathjax: true
+
+# Exclude large project directories from the site build
+exclude:
+  - agents
+  - mcp
+  - multimodal
+  - rag
+  - rl
+  - time-series
+  - training_recipes
+  - transformers
+  - LICENSE
+  - README.md
+  - .gitignore
+  - .DS_Store
