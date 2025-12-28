@@ -2,6 +2,7 @@
 import torch
 import torch.nn as nn
 
+# architecture diagram: https://sebastianraschka.com/images/LLMs-from-scratch-images/bonus/gpt-to-llama/gpt2-to-llama2-llama3.webp?1
 # Layer normalization
 
 class LayerNorm(nn.Module):
