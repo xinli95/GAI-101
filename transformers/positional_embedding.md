@@ -55,7 +55,7 @@ RoPE (Rotary Positional Embedding, from _RoFormer_) takes a different approach:
 
 ### 3.1 Rotation in 2D Pairs
 
-Split the embedding into 2D pairs: $(x*{2i}, x*{2i+1})$.
+Split the embedding into 2D pairs: $(x_{2i}, x_{2i+1})$.
 
 For a token at position $p$, RoPE rotates each pair by an angle $\theta\_{p,i}$:
 

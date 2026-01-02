@@ -98,7 +98,7 @@ def compute_rope(x, sin, cos):
 
 
 
-class MultiHeadAttention(nn.module):
+class MultiHeadAttention(nn.Module):
     def __init__(self, d_in, d_out, context_length, num_heads, dtype=None):
         super().__init__()
         assert d_out % num_heads == 0
